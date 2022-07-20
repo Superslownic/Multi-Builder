@@ -1,4 +1,4 @@
-﻿namespace Editor.Sources.Constants
+﻿namespace Multi.Builder.Constants
 {
     public static class Extensions
     {

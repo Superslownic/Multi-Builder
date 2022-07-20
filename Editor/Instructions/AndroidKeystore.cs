@@ -2,10 +2,10 @@
 using UnityEditor;
 using UnityEngine;
 using FilePath = Sirenix.OdinInspector.FilePathAttribute;
-using static Editor.Sources.Constants.Categories;
-using static Editor.Sources.Constants.Extensions;
+using static Multi.Builder.Constants.Categories;
+using static Multi.Builder.Constants.Extensions;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + Android + "Keystore"), InlineEditor]
     public class AndroidKeystore : ScriptableObject, IBuildInstruction

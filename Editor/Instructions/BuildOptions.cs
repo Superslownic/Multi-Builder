@@ -1,8 +1,8 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using static Editor.Sources.Constants.Categories;
+using static Multi.Builder.Constants.Categories;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + "Build Options"), InlineEditor]
     public class BuildOptions : ScriptableObject, IBuildInstruction

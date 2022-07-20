@@ -1,10 +1,10 @@
 ﻿using System.Xml;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using static Editor.Sources.Constants.Categories;
-using static Editor.Sources.Constants.Extensions;
+using static Multi.Builder.Constants.Categories;
+using static Multi.Builder.Constants.Extensions;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + "Set XML Attribute"), InlineEditor]
     public class XMLAttributeValue : ScriptableObject, IBuildInstruction

@@ -1,9 +1,9 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using static Editor.Sources.Constants.Categories;
+using static Multi.Builder.Constants.Categories;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + Android + "API Level"), InlineEditor]
     public class AndroidAPILevel : ScriptableObject, IBuildInstruction

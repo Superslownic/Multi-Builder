@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace Editor.Sources
+namespace Multi.Builder
 {
     public sealed class BuildSettings
     {

@@ -1,10 +1,10 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using static Editor.Sources.Constants.Categories;
-using static Editor.Sources.Constants.Extensions;
+using static Multi.Builder.Constants.Categories;
+using static Multi.Builder.Constants.Extensions;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + Android + "Build Type"), InlineEditor]
     public class AndroidBuildType : ScriptableObject, IBuildInstruction

@@ -1,9 +1,9 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using static Editor.Sources.Constants.Categories;
+using static Multi.Builder.Constants.Categories;
 
-namespace Editor.Sources.Instructions
+namespace Multi.Builder.Instructions
 {
     [CreateAssetMenu(menuName = Main + Instruction + "Build Target"), InlineEditor]
     public class BuildTarget : ScriptableObject, IBuildInstruction

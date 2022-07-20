@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 
-namespace Editor.Sources
+namespace Multi.Builder
 {
     public class MultiBuilder : OdinEditorWindow
     {

@@ -1,8 +1,8 @@
-﻿using Editor.Sources.Constants;
+﻿using Multi.Builder.Constants;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Editor.Sources
+namespace Multi.Builder
 {
     [CreateAssetMenu(menuName = Categories.Main + Name), InlineEditor]
     public class BuildProfile : SerializedScriptableObject
