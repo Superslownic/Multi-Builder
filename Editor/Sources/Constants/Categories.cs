@@ -2,7 +2,8 @@
 {
     public static class Categories
     {
-        public const string Instructions = "Build/Instructions/";
-        public const string Profiles = "Build/Profile/";
+        public const string Main = "Multi Builder/";
+        public const string Instruction = "Instruction/";
+        public const string Android = "Android/";
     }
 }

@@ -1,16 +1,17 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 using FilePath = Sirenix.OdinInspector.FilePathAttribute;
+using static Editor.Sources.Constants.Categories;
+using static Editor.Sources.Constants.Extensions;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(AndroidKeystore)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + Android + "Keystore"), InlineEditor]
     public class AndroidKeystore : ScriptableObject, IBuildInstruction
     {
         [SerializeField, ToggleLeft] private bool _useCustomKeystore;
-        [SerializeField, ShowIf(nameof(_useCustomKeystore)), FilePath(Extensions = Extensions.Keystore, AbsolutePath = true)] private string _file;
+        [SerializeField, ShowIf(nameof(_useCustomKeystore)), FilePath(Extensions = Keystore, AbsolutePath = true)] private string _file;
         [SerializeField, ShowIf(nameof(_useCustomKeystore))] private string _password;
         [SerializeField, ShowIf(nameof(_useCustomKeystore))] private string _alias;
         [SerializeField, ShowIf(nameof(_useCustomKeystore))] private string _aliasPassword;

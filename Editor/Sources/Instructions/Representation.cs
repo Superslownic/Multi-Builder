@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(Representation)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Representation"), InlineEditor]
     public class Representation : ScriptableObject, IBuildInstruction
     {
         [SerializeField] private UIOrientation _orientation;

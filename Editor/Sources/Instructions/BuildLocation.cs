@@ -1,10 +1,10 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(BuildLocation)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Build Location"), InlineEditor]
     public class BuildLocation : ScriptableObject, IBuildInstruction
     {
         [SerializeField, HideLabel, FolderPath(AbsolutePath = true)] private string _path;

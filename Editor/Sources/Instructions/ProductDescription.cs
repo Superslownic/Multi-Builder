@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(ProductDescription)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Product Description"), InlineEditor]
     public class ProductDescription : ScriptableObject, IBuildInstruction
     {
         [SerializeField] private string _companyName;

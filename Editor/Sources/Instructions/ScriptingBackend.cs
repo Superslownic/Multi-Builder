@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(ScriptingBackend)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Scripting Backend"), InlineEditor]
     public class ScriptingBackend : ScriptableObject, IBuildInstruction
     {
         [SerializeField, HideLabel, EnumToggleButtons] private Backend _backend;

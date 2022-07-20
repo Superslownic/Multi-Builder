@@ -1,16 +1,15 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(AndroidAPILevel)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + Android + "API Level"), InlineEditor]
     public class AndroidAPILevel : ScriptableObject, IBuildInstruction
     {
         [SerializeField, EnumPaging] private AndroidSdkVersions _minimum;
         [SerializeField, EnumPaging] private AndroidSdkVersions _target;
-        
         
         public void Process(BuildSettings settings)
         {

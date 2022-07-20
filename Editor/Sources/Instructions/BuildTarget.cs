@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(BuildTarget)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Build Target"), InlineEditor]
     public class BuildTarget : ScriptableObject, IBuildInstruction
     {
         [SerializeField, HideLabel, HorizontalGroup] private UnityEditor.BuildTarget _buildTarget;

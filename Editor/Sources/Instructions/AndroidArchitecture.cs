@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(AndroidArchitecture)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + Android + "Architecture"), InlineEditor]
     public class AndroidArchitecture : ScriptableObject, IBuildInstruction
     {
         [SerializeField, HideLabel, EnumToggleButtons] private UnityEditor.AndroidArchitecture _architecture;

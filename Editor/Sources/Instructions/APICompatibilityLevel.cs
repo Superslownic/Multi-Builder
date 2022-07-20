@@ -1,11 +1,11 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(APICompatibilityLevel)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "API Compatibility Level"), InlineEditor]
     public class APICompatibilityLevel : ScriptableObject, IBuildInstruction
     {
         [SerializeField, HideLabel, EnumToggleButtons] private Level _level;

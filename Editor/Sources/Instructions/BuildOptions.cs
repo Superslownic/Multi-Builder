@@ -1,10 +1,10 @@
-﻿using Editor.Sources.Constants;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(BuildOptions)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Build Options"), InlineEditor]
     public class BuildOptions : ScriptableObject, IBuildInstruction
     {
         [SerializeField, ToggleLeft] private bool _showInExplorer;

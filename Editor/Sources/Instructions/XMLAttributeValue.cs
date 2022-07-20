@@ -1,14 +1,15 @@
 ﻿using System.Xml;
-using Editor.Sources.Constants;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using static Editor.Sources.Constants.Categories;
+using static Editor.Sources.Constants.Extensions;
 
 namespace Editor.Sources.Instructions
 {
-    [CreateAssetMenu(menuName = Categories.Instructions + nameof(XMLAttributeValue)), InlineEditor]
+    [CreateAssetMenu(menuName = Main + Instruction + "Set XML Attribute"), InlineEditor]
     public class XMLAttributeValue : ScriptableObject, IBuildInstruction
     {
-        [SerializeField, FilePath(Extensions = Extensions.XML)] private string _file;
+        [SerializeField, FilePath(Extensions = XML)] private string _file;
         [SerializeField] private string _node;
         [SerializeField] private string _attribute;
         [SerializeField] private string _value;
