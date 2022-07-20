@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MultiBuilder.Sources.Editor
+namespace Editor.Sources
 {
     [Flags]
     public enum AutoOrientations

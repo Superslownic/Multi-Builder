@@ -1,8 +1,8 @@
-﻿using MultiBuilder.Sources.Editor.Constants;
+﻿using Editor.Sources.Constants;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace MultiBuilder.Sources.Editor.Instructions
+namespace Editor.Sources.Instructions
 {
     [CreateAssetMenu(menuName = Categories.Instructions + nameof(BuildLocation)), InlineEditor]
     public class BuildLocation : ScriptableObject, IBuildInstruction

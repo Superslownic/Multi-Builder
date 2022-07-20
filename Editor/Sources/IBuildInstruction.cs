@@ -1,4 +1,4 @@
-﻿namespace MultiBuilder.Sources.Editor
+﻿namespace Editor.Sources
 {
     public interface IBuildInstruction
     {

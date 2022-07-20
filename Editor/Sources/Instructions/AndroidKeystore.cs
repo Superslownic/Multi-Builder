@@ -1,10 +1,10 @@
-﻿using MultiBuilder.Sources.Editor.Constants;
+﻿using Editor.Sources.Constants;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 using FilePath = Sirenix.OdinInspector.FilePathAttribute;
 
-namespace MultiBuilder.Sources.Editor.Instructions
+namespace Editor.Sources.Instructions
 {
     [CreateAssetMenu(menuName = Categories.Instructions + nameof(AndroidKeystore)), InlineEditor]
     public class AndroidKeystore : ScriptableObject, IBuildInstruction

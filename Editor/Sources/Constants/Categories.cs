@@ -1,4 +1,4 @@
-﻿namespace MultiBuilder.Sources.Editor.Constants
+﻿namespace Editor.Sources.Constants
 {
     public static class Categories
     {

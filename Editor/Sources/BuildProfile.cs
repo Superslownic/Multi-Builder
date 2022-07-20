@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace MultiBuilder.Sources.Editor
+namespace Editor.Sources
 {
     [CreateAssetMenu, InlineEditor]
     public class BuildProfile : SerializedScriptableObject
