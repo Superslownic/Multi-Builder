@@ -1,0 +1,15 @@
+{
+  "name": "com.superslownic.multi-builder",
+  "version": "1.0.0",
+  "displayName": "Multi Builder",
+  "description": "",
+  "unity": "2020.3.36f1",
+  "author": {
+    "name": "Daniil Noskov",
+    "email": "isuperslownic@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}
