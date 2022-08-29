@@ -1,26 +1,26 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using static Multi.Builder.Constants.Categories;
 
 namespace Multi.Builder.Instructions
 {
-    [CreateAssetMenu(menuName = Main + Instruction + Android + "Icon"), InlineEditor]
-    public class AndroidIcon : ScriptableObject, IBuildInstruction
+  [Serializable, InlineEditor]
+  public class AndroidIcon : IBuildInstruction
+  {
+    [SerializeField, HideLabel] private Texture2D _icon;
+
+    public void Process(BuildSettings settings)
     {
-        [SerializeField, HideLabel] private Texture2D _icon;
-        
-        public void Process(BuildSettings settings)
-        {
-            PlayerSettings.SetIconsForTargetGroup(settings.BuildTargetGroup, new []
-            {
-                _icon,
-                _icon,
-                _icon,
-                _icon,
-                _icon,
-                _icon
-            });
-        }
+      PlayerSettings.SetIconsForTargetGroup(settings.BuildTargetGroup, new[]
+      {
+        _icon,
+        _icon,
+        _icon,
+        _icon,
+        _icon,
+        _icon
+      });
     }
+  }
 }
