@@ -5,6 +5,7 @@
     public const string XML = ".xml";
     public const string APK = ".apk";
     public const string AAB = ".aab";
-    public const string Keystore = ".keystore";
+    public const string KEYSTORE = ".keystore";
+    public const string META = ".meta";
   }
 }

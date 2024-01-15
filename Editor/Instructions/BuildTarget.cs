@@ -9,10 +9,10 @@ namespace Multi.Builder.Instructions
   public class BuildTarget : IBuildInstruction
   {
     [SerializeField, HideLabel, HorizontalGroup]
-    private UnityEditor.BuildTarget _buildTarget;
+    private UnityEditor.BuildTarget _buildTarget = UnityEditor.BuildTarget.Android;
 
     [SerializeField, HideLabel, HorizontalGroup]
-    private BuildTargetGroup _buildTargetGroup;
+    private BuildTargetGroup _buildTargetGroup = BuildTargetGroup.Android;
 
     public void Process(BuildSettings settings)
     {

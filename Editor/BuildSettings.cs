@@ -1,19 +1,28 @@
-﻿using UnityEditor;
+﻿using System.IO;
+using Multi.Builder.Constants;
+using UnityEditor;
+using UnityEngine;
 
 namespace Multi.Builder
 {
   public sealed class BuildSettings
   {
-    public string Path;
-    public string Name;
-    public string Extension;
-    public string Version;
-    public int VersionCode;
-    public BuildOptions BuildOptions;
-    public BuildTarget BuildTarget;
-    public BuildTargetGroup BuildTargetGroup;
+    public string Path = "Builds";
+    public string Name = Application.productName;
+    public string Extension = Extensions.APK;
+    public string Version = "0.1";
+    public int VersionCode = 1;
+    public BuildOptions BuildOptions = BuildOptions.None;
+    public BuildTarget BuildTarget = BuildTarget.Android;
+    public BuildTargetGroup BuildTargetGroup = BuildTargetGroup.Android;
 
     public string FullPath =>
-      $"{Path.Trim()}/{Name} v.{VersionCode}({Version.Trim()}){Extension}";
+      $"{FullDirectory}/{FullName}";
+
+    private string FullDirectory =>
+      $"{Directory.GetCurrentDirectory()}/{Path.Trim()}";
+    
+    private string FullName =>
+      $"{Name} {Version.Trim()}({VersionCode}){Extension}";
   }
 }

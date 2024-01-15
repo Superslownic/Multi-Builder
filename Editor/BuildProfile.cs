@@ -4,8 +4,8 @@ using UnityEngine;
 namespace Multi.Builder
 {
   [CreateAssetMenu(menuName = "Multi Builder/Profile"), InlineEditor]
-  public class BuildProfile : SerializedScriptableObject
+  public class BuildProfile : ScriptableObject
   {
-    public readonly IBuildInstruction[] Instructions = new IBuildInstruction[0];
+    [field: SerializeReference] public IBuildInstruction[] Instructions { get; private set; }
   }
 }
