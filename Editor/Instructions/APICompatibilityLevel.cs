@@ -9,31 +9,16 @@ namespace Multi.Builder.Instructions
   public class APICompatibilityLevel : IBuildInstruction
   {
     [SerializeField, HideLabel, EnumToggleButtons]
-    private Level _level;
+    private ApiCompatibilityLevel _level;
+
+    public Type[] Dependencies { get; private set; } =
+    {
+      typeof(BuildTarget)
+    };
 
     public void Process(BuildSettings settings)
     {
-      switch (_level)
-      {
-        case Level.NET_Standard_2_0:
-          PlayerSettings.SetApiCompatibilityLevel(settings.BuildTargetGroup,
-            ApiCompatibilityLevel.NET_Standard_2_0);
-          break;
-        
-        case Level.NET_4_X:
-          PlayerSettings.SetApiCompatibilityLevel(settings.BuildTargetGroup,
-            ApiCompatibilityLevel.NET_Standard_2_0);
-          break;
-        
-        default:
-          throw new ArgumentOutOfRangeException();
-      }
-    }
-
-    private enum Level
-    {
-      NET_Standard_2_0,
-      NET_4_X
+      PlayerSettings.SetApiCompatibilityLevel(settings.BuildTargetGroup, _level);
     }
   }
 }

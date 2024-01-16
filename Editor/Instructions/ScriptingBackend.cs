@@ -11,6 +11,11 @@ namespace Multi.Builder.Instructions
     [SerializeField, HideLabel, EnumToggleButtons]
     private Backend _backend;
 
+    public Type[] Dependencies { get; private set; } =
+    {
+      typeof(BuildTarget)
+    };
+
     public void Process(BuildSettings settings)
     {
       switch (_backend)
