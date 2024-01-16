@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class BuildLocation : IBuildInstruction
+  public class BuildLocation : IPreBuildInstructionSync
   {
     [SerializeField, HideLabel, FolderPath(AbsolutePath = true, RequireExistingPath = true)]
     private string _path = "Builds";

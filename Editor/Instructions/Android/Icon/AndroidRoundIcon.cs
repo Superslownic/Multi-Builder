@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
 	[Serializable, InlineEditor]
-	public class AndroidRoundIcon : IBuildInstruction
+	public class AndroidRoundIcon : IPreBuildInstructionSync
 	{
 		[ToggleLeft]
 		public bool Extended;

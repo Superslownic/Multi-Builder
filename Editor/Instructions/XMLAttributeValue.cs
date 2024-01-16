@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class XMLAttributeValue : IBuildInstruction
+  public class XMLAttributeValue : IPreBuildInstructionSync
   {
     [SerializeField, FilePath(Extensions = Extensions.XML)]
     private string _file;

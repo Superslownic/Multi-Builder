@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class Representation : IBuildInstruction
+  public class Representation : IPreBuildInstructionSync
   {
     [SerializeField] private UIOrientation _orientation;
 

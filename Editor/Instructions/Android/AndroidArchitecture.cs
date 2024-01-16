@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class AndroidArchitecture : IBuildInstruction
+  public class AndroidArchitecture : IPreBuildInstructionSync
   {
     [SerializeField, HideLabel, EnumToggleButtons]
     private UnityEditor.AndroidArchitecture _architecture;

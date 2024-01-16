@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class ProductDescription : IBuildInstruction
+  public class ProductDescription : IPreBuildInstructionSync
   {
     [SerializeField]
     private string _companyName = "company";

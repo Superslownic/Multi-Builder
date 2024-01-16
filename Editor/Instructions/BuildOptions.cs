@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class BuildOptions : IBuildInstruction
+  public class BuildOptions : IPreBuildInstructionSync
   {
     [SerializeField, ToggleLeft] private bool _showInExplorer;
     [SerializeField, ToggleLeft] private bool _developmentBuild;

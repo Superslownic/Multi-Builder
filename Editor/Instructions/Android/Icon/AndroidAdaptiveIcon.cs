@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
 	[Serializable, InlineEditor]
-	public class AndroidAdaptiveIcon : IBuildInstruction
+	public class AndroidAdaptiveIcon : IPreBuildInstructionSync
 	{
 		[ToggleLeft]
 		public bool Extended;

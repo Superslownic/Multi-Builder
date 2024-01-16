@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class AndroidAPILevel : IBuildInstruction
+  public class AndroidAPILevel : IPreBuildInstructionSync
   {
     [SerializeField, EnumPaging] private AndroidSdkVersions _minimum;
     [SerializeField, EnumPaging] private AndroidSdkVersions _target;

@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class APICompatibilityLevel : IBuildInstruction
+  public class APICompatibilityLevel : IPreBuildInstructionSync
   {
     [SerializeField, HideLabel, EnumToggleButtons]
     private ApiCompatibilityLevel _level;

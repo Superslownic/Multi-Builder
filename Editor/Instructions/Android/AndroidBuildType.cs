@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class AndroidBuildType : IBuildInstruction
+  public class AndroidBuildType : IPreBuildInstructionSync
   {
     [SerializeField, EnumToggleButtons, HideLabel]
     private Type _type;

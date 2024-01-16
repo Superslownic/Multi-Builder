@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class ScriptingBackend : IBuildInstruction
+  public class ScriptingBackend : IPreBuildInstructionSync
   {
     [SerializeField, HideLabel, EnumToggleButtons]
     private Backend _backend;

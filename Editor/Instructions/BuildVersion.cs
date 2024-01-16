@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class BuildVersion : IBuildInstruction
+  public class BuildVersion : IPreBuildInstructionSync
   {
     [SerializeField]
     private string _version = "0.1";

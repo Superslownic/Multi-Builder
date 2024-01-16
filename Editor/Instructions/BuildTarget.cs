@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class BuildTarget : IBuildInstruction
+  public class BuildTarget : IPreBuildInstructionSync
   {
     [SerializeField, HideLabel, HorizontalGroup]
     private UnityEditor.BuildTarget _buildTarget = UnityEditor.BuildTarget.Android;

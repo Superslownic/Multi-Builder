@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Multi.Builder.Instructions
 {
   [Serializable, InlineEditor]
-  public class AndroidKeystore : IBuildInstruction
+  public class AndroidKeystore : IPreBuildInstructionSync
   {
     [SerializeField] public bool UseCustomKeystore;
     [SerializeField] public string KeystorePath;
